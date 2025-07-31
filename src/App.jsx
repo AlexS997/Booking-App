@@ -1,10 +1,10 @@
-import React from 'react'
 import Navbar from './components/Navbar'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
 import Footer from './components/Footer'
 import Rooms from './pages/Rooms'
 import RoomDetail from './pages/RoomDetail'
+import Bookings from './pages/Bookings'
 
 const App = () => {
   
@@ -18,6 +18,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/rooms' element={<Rooms />} />
           <Route path='/rooms/:id' element={<RoomDetail />} />
+          <Route path='/my-bookings' element={<Bookings />} />
         </Routes>
       </div>
       <Footer />
