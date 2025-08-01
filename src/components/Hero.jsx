@@ -19,11 +19,11 @@ const Hero = () => {
                     <label htmlFor="destinationInput">Destination</label>
                 </div>
                 <input list='destinations' id="destinationInput" type="text" className=" rounded border border-gray-200 px-3 py-1.5 mt-1.5 text-sm outline-none" placeholder="Type here" required />
-                <dataList id="destinations">
+                <datalist id="destinations">
                   {cities.map((city, index) => (
                       <option value={city} key={index} />
                   ))}
-                </dataList>
+                </datalist>
             </div>
 
             <div>
